@@ -1,7 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    
+    padding: 10px;
+}
+
+header section.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    
+}
+
+header nav ul li a{
+    color: seashell
 }
