@@ -1,3 +1,4 @@
+/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -10,43 +11,134 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    text-align: center;
 }
 
+h2, h4 {
+    padding: 10px;
+}
+/* 
+    Header
+*/
+
 header {
-    position: fixed;
     display: flex;
     justify-content: space-between;
+    position: sticky;
     height: 69px;
     width: 100%;
     border-bottom: 1px solid seashell;
-    
     padding: 10px;
 }
 
-header section.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header section.logo img {
+/* Logo */
+section.logo img {
     height: 50px;
 }
 
+/* Nav */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     list-style: none;
     gap: 1em;
     
 }
 
-header nav ul li a{
+nav ul li a{
     color: seashell
+}
+
+/* 
+    Main
+*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Banner */
+section.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1vvyurr*_ga*MTA5MzA2NzU3NS4xNjk1OTQwMzY5*_ga_3LRZM6TM9L*MTY5NzkzNDcxNC4yMy4xLjE2OTc5MzczMTMuMC4wLjA');
+}
+
+div.banner-center {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Featured Tea */
+section.featured-tea{
+    margin: 50px 0;
+}
+div.tea-of-the-month {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.tea-card {
+    margin: 10px;
+}
+
+ div.tea-card img{
+    height: 200px;
+    width: 300px;
+}
+
+/* Locations */
+section.location {
+    height: 500px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1vvyurr*_ga*MTA5MzA2NzU3NS4xNjk1OTQwMzY5*_ga_3LRZM6TM9L*MTY5NzkzNDcxNC4yMy4xLjE2OTc5MzczMTMuMC4wLjA.');
+}
+
+section.location > h2 {
+    margin-top: 60px;
+}
+
+div.location-container {
+    display: inline-flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+div.location-card {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Footer */
+footer h5 {
+    font-weight: bold;
+}
+
+section.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.copy-right {
+    text-align: left;
+    margin: 20px;
 }
